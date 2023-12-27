@@ -9,7 +9,49 @@
 </head>
 <body>
 
-    <h1 class="text-center font-bold text-9xl">Hello World!</h1>
+    <section>
+
+        <div class="card_header">
+            <img src="assets/images/bg-main-mobile.png" alt="Background Image">
+            <div class="absolute">
+                <!-- <img src="assets/images/bg-card-back.png" alt=""> -->
+            </div>
+        </div>
+
+        <div class="card_content">
+            <form action="" class="p-6 grid gap-4">
+                <div class="grid">
+                    <label for="cardholder_name" class="text-sm text-indigo-950 font-semibold mb-1">CARDHOLDER NAME</label>
+                    <input type="text" name="cardholder_name" placeholder="e.g. Jane Appleseed" class="border rounded-md py-2 px-3 focus-visible:outline-indigo-950">
+                </div>
+
+                <div class="grid">
+                    <label for="card_number" class="text-sm text-indigo-950 font-semibold mb-1">CARD NUMBER</label>
+                    <input type="text" name="card_number" placeholder="e.g. 1234 5678 9123 0000" class="border rounded-md py-2 px-3 focus-visible:outline-indigo-950">
+                </div>
+
+                <div class="grid grid-cols-2 gap-2">
+                    <div class="grid grid-cols-2">
+                        <label for="month" class="text-sm text-indigo-950 font-semibold mb-1 col-span-2">EXP. DATE (MM/YY)</label>
+                        <input type="number" name="month" placeholder="MM" class="border rounded-md py-2 px-3 mr-1 focus-visible:outline-indigo-950">
+                        <input type="number" name="years" placeholder="YY" class="border rounded-md py-2 px-3 ml-1 focus-visible:outline-indigo-950">
+                    </div>
+
+                    <div class="grid">
+                        <label for="cvc" class="text-sm text-indigo-950 font-semibold mb-1">CVC</label>
+                        <input type="text" name="cvc" placeholder="e.g. 123" class="border rounded-md py-2 px-3 focus-visible:outline-indigo-950">
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <button class="bg-indigo-950 text-white rounded-md py-2">
+                        <span class="text-lg">Confirm</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </section>
 
 </body>
 </html>
